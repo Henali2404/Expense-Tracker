@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Balance Card</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"defer></script>
+    </head>
+    <body>
+        <header>
+            <h3>Expense Tracker</h3>
+            <p>DOM + Arrays +Local Storage practice project</p>
+        </header>
+        <div class="Balancecard" id="Balancecard">
+            <p>Current Balance</p>
+            <h2 id = "current-balance">$0.00</h2>
+            <div class="Income" id="Income">
+                <p>Income</p>
+                <h2 id="income-balance">$0.00</h2>
+            </div>
+            <br>
+            <div class="Expense" id="Expense">
+                <p>Expense</p>
+                <h2 id="expense-balance">$0.00</h2>
+            </div>
+        </div>
+        <div class="Transactioncard" id="Transactioncard">
+            <form>
+                    <div class="Select" id="Select">
+                        <input type ="text" placeholder="eg.Grocery" id="entry-name"><br><br> 
+                        <input type="number" placeholder="Amount" id="entry-amount"><br><br>
+                        <select id="entry-type">
+                             <option value="Expense">Expense</option>
+                             <option value="Income">Income</option>
+                        </select>
+                        <select id="entry-category">
+                           <option>Food</option>
+                           <option>Travel</option>
+                           <option>Shopping</option>
+                           <option>Salary</option>
+                        </select>
+                    </div>
+                    <div class = "Add" id="Add">
+                        <button type="button">Add entry</button>
+                    </div>
+            </form>
+        </div>
+        <div class ="History" id="History">
+            <p id="recent-entries"><b>Recent entries</b></p>
+            <a href="#">View all</a>
+            <br><br>
+            <div id="entries-container"></div>
+        </div>
+        
+        
+    </body>
+</html>
